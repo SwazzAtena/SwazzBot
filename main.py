@@ -4,11 +4,11 @@ from pyfiglet import Figlet
 import webbrowser
 import qrcode
 import os
-os.system("pip install pyttsx3")
-while True:
-    f = Figlet(font='univers')
-    print(f.renderText('SwazzAtena#1889'))
 
+while True:
+    f = Figlet(font='standard')
+    print(f.renderText('SwazzAtena#1889'))
+    os.system("pip install pyttsx3")
     print("""
 1)QR CODE MAKE
 2)Tiktok Bot Basma
@@ -26,7 +26,7 @@ while True:
     if islemno=="2":
         webbrowser.open("freer.in")
     if islemno=="3":
-        Metin = input("Konuşturulacak Metni Seçiniz")
+        Metin = input("Konuşturulacak Metni Seçiniz: ")
         engine = pyttsx3.init()
         engine.say(Metin)
         engine.runAndWait()
