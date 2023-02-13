@@ -4,11 +4,21 @@ from pyfiglet import Figlet
 import webbrowser
 import qrcode
 import os
-
+from colorama import Fore, init
 while True:
-    f = Figlet(font='standard')
-    print(f.renderText('SwazzAtena#1889'))
-    os.system("pip install pyttsx3")
+    init(autoreset=True)
+    print(Fore.YELLOW + "SwazzAtena#1889")
+    print(Fore.BLACK + "SwazzAtena#1889")
+    print(Fore.BLUE + "SwazzAtena#1889")
+    print(Fore.GREEN+ "SwazzAtena#1889")
+    print(Fore.LIGHTRED_EX + "SwazzAtena#1889")
+    print(Fore.LIGHTMAGENTA_EX + "SwazzAtena#1889")
+    print(Fore.LIGHTGREEN_EX + "SwazzAtena#1889")
+    print(Fore.LIGHTBLUE_EX + "SwazzAtena#1889")
+    print(Fore.LIGHTYELLOW_EX + "SwazzAtena#1889")
+    print(Fore.LIGHTWHITE_EX + "SwazzAtena#1889")
+    print(Fore.MAGENTA + "SwazzAtena#1889")
+
     print("""
 1)QR CODE MAKE
 2)Tiktok Bot Basma
@@ -32,5 +42,5 @@ while True:
         engine.runAndWait()
     if islemno=="4":
         f = Figlet(font='standard')
-        print(f.renderText('By Swazz'))
+        print(f.renderText(' By Swazz'))
         break
