@@ -23,7 +23,8 @@ while True:
 1)QR CODE MAKE
 2)Tiktok Bot Basma
 3)Metini Sese Çevirme
-4)Çıkış
+4)Discord Adresimiz
+5)Çıkış
       """)
 
     islemno = input("İstediğiniz Nedir: ")
@@ -40,7 +41,10 @@ while True:
         engine = pyttsx3.init()
         engine.say(Metin)
         engine.runAndWait()
-    if islemno=="4":
+    if islemno=="5":
         f = Figlet(font='standard')
         print(f.renderText(' By Swazz'))
+        break
+    if islemno=="4":
+        webbrowser.open("https://discord.gg/F3ddWkB6")
         break
