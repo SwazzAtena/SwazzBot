@@ -32,4 +32,5 @@ while True:
         engine.runAndWait()
     if islemno=="4":
         f = Figlet(font='standard')
-        print(f.renderText('Görüşürüz By Swazz'))
+        print(f.renderText('By Swazz'))
+        break
